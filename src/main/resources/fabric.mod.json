@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "scadrian-investiture",
+	"version": "${version}",
+	"name": "Scadrian Investiture",
+	"description": "Bringing the Metallic Arts to the world of Minecraft.",
+	"authors": [
+		"Prismatica"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/scadrian-investiture/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.prisma.mistborn.ScadrianInvestiture"
+		],
+		"client": [
+			"net.prisma.mistborn.ScadrianInvestitureClient"
+		],
+		"fabric-datagen": [
+			"net.prisma.mistborn.ScadrianInvestitureDataGenerator"
+		]
+	},
+	"mixins": [
+		"scadrian-investiture.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
