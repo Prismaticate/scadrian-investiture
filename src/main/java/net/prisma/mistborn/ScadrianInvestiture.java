@@ -2,6 +2,8 @@ package net.prisma.mistborn;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.prisma.mistborn.item.ModItemGroups;
+import net.prisma.mistborn.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +21,8 @@ public class ScadrianInvestiture implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 		LOGGER.info("Hello Fabric world! Ruin and Preservation are at war...");
 	}
 }
